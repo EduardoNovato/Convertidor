@@ -12,33 +12,43 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 val LightColorScheme = lightColorScheme(
-    primary = Color(0xFF1E88E5),           // Azul limpio y brillante
+    primary = Color(0xFF757575),           // App Bar
     onPrimary = Color.White,
-    secondary = Color(0xFF546E7A),         // Gris azulado sobrio
-    onSecondary = Color.White,
-    background = Color(0xFFF4F6F8),        // Gris claro (no blanco puro)
-    onBackground = Color(0xFF1A1A1A),
-    surface = Color.White,
-    onSurface = Color(0xFF1A1A1A),
-    primaryContainer = Color(0xFFE3F2FD),  // Azul muy claro para tarjetas
-    onPrimaryContainer = Color(0xFF0D47A1),
-    tertiary = Color(0xFF7E57C2),
-    onTertiary = Color.White
+
+    primaryContainer = Color(0xFFE0E0E0),   // Cards neutrales
+    onPrimaryContainer = Color(0xFF212121),
+
+    secondary = Color(0xFFBDBDBD),          // Gris medio
+    onSecondary = Color(0xFF212121),
+
+    background = Color(0xFFEEEEEE),         // Fondo general
+    onBackground = Color(0xFF212121),
+
+    surface = Color(0xFFFAFAFA),            // Cards/dialogs blancos
+    onSurface = Color(0xFF212121),
+
+    tertiary = Color(0xFF90CAF9),           // Azul suave para botones
+    onTertiary = Color.Black
 )
 
 val DarkColorScheme = darkColorScheme(
-    primary = Color(0xFF90CAF9),           // Azul claro visible
-    onPrimary = Color(0xFF0D47A1),
-    secondary = Color(0xFFB0BEC5),
-    onSecondary = Color(0xFF263238),
-    background = Color(0xFF121212),
-    onBackground = Color(0xFFE0E0E0),
-    surface = Color(0xFF1E1E1E),
-    onSurface = Color(0xFFE0E0E0),
-    primaryContainer = Color(0xFF2C2C2C),  // Gris carbón para tarjetas
-    onPrimaryContainer = Color(0xFFBBDEFB),
-    tertiary = Color(0xFFCE93D8),
-    onTertiary = Color(0xFF4A148C)
+    primary = Color(0xFF90CAF9),            // Azul claro para acciones principales
+    onPrimary = Color.Black,
+
+    secondary = Color(0xFFB0BEC5),          // Gris claro útil para chips/botones secundarios
+    onSecondary = Color.Black,
+
+    background = Color(0xFF212121),         // Fondo general
+    onBackground = Color(0xFFE0E0E0),       // Texto principal
+
+    surface = Color(0xFF303030),            // Cards, app bar, dialog
+    onSurface = Color(0xFFE0E0E0),          // Texto sobre surface
+
+    primaryContainer = Color(0xFF424242),   // Variantes para tarjetas secundarias
+    onPrimaryContainer = Color(0xFFF5F5F5), // Texto claro para container
+
+    tertiary = Color(0xFFCE93D8),           // Accent suave
+    onTertiary = Color(0xFF2C003E)
 )
 
 
